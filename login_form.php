@@ -29,6 +29,9 @@
 		while($row = mysqli_fetch_assoc($result)) {
         	if (password_verify($password, $row["user_password"])) {
     			echo 'Password is valid!';
+    			session_start();
+    			$_SESSION['loggedin'] = true;
+    			$_SESSION['email'] = $email;
 			} else {
 			    echo 'Invalid password.';
 			}
