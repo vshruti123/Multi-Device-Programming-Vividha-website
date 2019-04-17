@@ -23,9 +23,10 @@
         <script type="text/javascript" src="engine3/jquery.js"></script>
         <!-- End WOWSlider.com HEAD section -->
         <style>
-            body {
+            #theme {
                 font-family: Verdana, sans-serif;
                 margin: 0;
+                background-color: white;
             }
 
             * {
@@ -51,12 +52,12 @@
             .modal {
                 display: none;
                 position: fixed;
-                z-index: 999;
-                padding-top: 100px;
+                z-index: 3000;
+                padding-top: 10px;
                 left: 0;
                 top: 0;
-                width: 100%;
-                height: 100%;
+               
+                 max-height: calc(100vh - 0px);
                 overflow: auto;
                 background-color:white;
             }
@@ -75,7 +76,7 @@
             .close {
                 color: black;
                 position: absolute;
-                top: 150px;
+                top: 0px;
                 right: 25px;
                 font-size: 35px;
                 font-weight: bold;
@@ -109,14 +110,24 @@
 
             img {
                 margin-bottom: -4px;
-                margin-top: 50px;
+                margin-top: 10px;
+                margin-left: 5px;
+                margin-right: 5px;
+                max-width: 70%;
+                max-height: 70%;
             }
 
             .caption-container {
                 text-align: center;
                 background-color: white;
-                padding: 50px 50px;
+                min-height:100%;
+                min-width:100%;
+                padding-bottom: 300px;
                 color: black;
+            }
+            #caption
+            {
+                padding-top:100px;
             }
 
             .demo {
@@ -174,15 +185,21 @@
                         <li><a href="about.html">About US</a></li>
                         <li><a href="club.html">Club Members</a></li>
 
-                        <li class="dropdown-active">
+                        <li class="dropdown-active active">
                             <a href="#" class="dropdown-toggle"  data-toggle="dropdown">Exhibitions <b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li><a href="16.html">2016</a></li>
                                 <li><a href="17.html">2017</a></li>
-                                <li><a href="18.html">2018</a></li>
+                                <li class="active"><a href="18.html">2018</a></li>
                             </ul>
                         </li>
                         <li><a href="contact.html">Contact Us</a></li>
+                        <li>
+                            <a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+                        </li>
+                        <li>
+                            <a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+                        </li>
 
 
                     </ul>
@@ -634,12 +651,13 @@
 
 
                 <div id="myModal" class="modal">
-                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    
                     <div class="modal-content">
 
                         <div class="mySlides">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
                             <div class="numbertext"></div>
-                            <img src="img/18/DSC_0418.JPG" style="width:50%" align="left">
+                            <img src="img/18/DSC_0418.JPG" style="width:50%;height:600px align="left">
                             <div class="caption-container">
                                 <p id="caption">Painting Title: Nature<br><br>
                                     Painting Desription: hggluhfkdsnlk<br><br>
@@ -651,8 +669,9 @@
                         </div>
 
                         <div class="mySlides">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
                             <div class="numbertext"></div>
-                            <img src="img/18/DSC_0492.JPG" style="width:50%" align="left">
+                            <img src="img/18/DSC_0492.JPG" style="width:50%;height:600px" align="left">
                             <div class="caption-container">
                                 <p id="caption">Painting Title: Nature<br><br>
                                     Painting Desription: hggluhfkdsnlk<br><br>
@@ -664,8 +683,9 @@
                         </div>
 
                         <div class="mySlides">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
                             <div class="numbertext"></div>
-                            <img src="img/18/DSC_0417.JPG" style="width:50%" align="left">
+                            <img src="img/18/DSC_0417.JPG" style="width:50%;height:600px" align="left">
                             <div class="caption-container">
                                 <p id="caption">Painting Title: Nature<br><br>
                                     Painting Desription: hggluhfkdsnlk<br><br>
@@ -677,8 +697,9 @@
                         </div>
 
                         <div class="mySlides">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
                             <div class="numbertext"></div>
-                            <img src="img/18/DSC_0493.JPG" style="width:50%" align="left" >
+                            <img src="img/18/DSC_0493.JPG" style="width:50;height:600px%" align="left" >
                             <div class="caption-container">
                                 <p id="caption">Painting Title: Nature<br><br>
                                     Painting Desription: hggluhfkdsnlk<br><br>
@@ -689,8 +710,9 @@
                             </div>
                         </div>
                         <div class="mySlides">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
                             <div class="numbertext"></div>
-                            <img src="img/18/DSC_0495.JPG" style="width:50%" align="left" >
+                            <img src="img/18/DSC_0495.JPG" style="width:50%;height:600px" align="left" >
                             <div class="caption-container">
                                 <p id="caption">Painting Title: Nature<br><br>
                                     Painting Desription: hggluhfkdsnlk<br><br>
@@ -701,8 +723,9 @@
                             </div>
                         </div>
                         <div class="mySlides">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
                             <div class="numbertext"></div>
-                            <img src="img/18/DSC_0496.JPG" style="width:50%" align="left" >
+                            <img src="img/18/DSC_0496.JPG" style="width:50%;height:600px" align="left" >
                             <div class="caption-container">
                                 <p id="caption">Painting Title: Nature<br><br>
                                     Painting Desription: hggluhfkdsnlk<br><br>
@@ -713,8 +736,9 @@
                             </div>
                         </div>
                         <div class="mySlides">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
                             <div class="numbertext"></div>
-                            <img src="img/18/DSC_0498.JPG" style="width:50%" align="left" >
+                            <img src="img/18/DSC_0498.JPG" style="width:50%;height:600px" align="left" >
                             <div class="caption-container">
                                 <p id="caption">Painting Title: Nature<br><br>
                                     Painting Desription: hggluhfkdsnlk<br><br>
@@ -725,8 +749,9 @@
                             </div>
                         </div>
                         <div class="mySlides">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
                             <div class="numbertext"></div>
-                            <img src="img/18/DSC_0499.JPG" style="width:50%" align="left" >
+                            <img src="img/18/DSC_0499.JPG" style="width:50%;height:600px" align="left" >
                             <div class="caption-container">
                                 <p id="caption">Painting Title: Nature<br><br>
                                     Painting Desription: hggluhfkdsnlk<br><br>
@@ -737,8 +762,9 @@
                             </div>
                         </div>
                         <div class="mySlides">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
                             <div class="numbertext"></div>
-                            <img src="img/18/DSC_0500.JPG" style="width:50%" align="left" >
+                            <img src="img/18/DSC_0500.JPG" style="width:50%;height:600px" align="left" >
                             <div class="caption-container">
                                 <p id="caption">Painting Title: Nature<br><br>
                                     Painting Desription: hggluhfkdsnlk<br><br>
@@ -749,8 +775,9 @@
                             </div>
                         </div>
                         <div class="mySlides">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
                             <div class="numbertext"></div>
-                            <img src="img/18/DSC_0654.JPG" style="width:50%" align="left" >
+                            <img src="img/18/DSC_0654.JPG" style="width:50%;height:600px" align="left" >
                             <div class="caption-container">
                                 <p id="caption">Painting Title: Nature<br><br>
                                     Painting Desription: hggluhfkdsnlk<br><br>
@@ -761,8 +788,9 @@
                             </div>
                         </div>
                         <div class="mySlides">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
                             <div class="numbertext"></div>
-                            <img src="img/18/DSC_0656.JPG" style="width:50%" align="left" >
+                            <img src="img/18/DSC_0656.JPG" style="width:50%;height:600px" align="left" >
                             <div class="caption-container">
                                 <p id="caption">Painting Title: Nature<br><br>
                                     Painting Desription: hggluhfkdsnlk<br><br>
@@ -773,8 +801,9 @@
                             </div>
                         </div>
                         <div class="mySlides">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
                             <div class="numbertext"></div>
-                            <img src="img/18/DSC_0663.JPG" style="width:50%" align="left" >
+                            <img src="img/18/DSC_0663.JPG" style="width:50%;height:600px" align="left" >
                             <div class="caption-container">
                                 <p id="caption">Painting Title: Nature<br><br>
                                     Painting Desription: hggluhfkdsnlk<br><br>
@@ -785,8 +814,9 @@
                             </div>
                         </div>
                         <div class="mySlides">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
                             <div class="numbertext"></div>
-                            <img src="img/18/DSC_0666.JPG" style="width:50%" align="left" >
+                            <img src="img/18/DSC_0666.JPG" style="width:50%;height:600px" align="left" >
                             <div class="caption-container">
                                 <p id="caption">Painting Title: Nature<br><br>
                                     Painting Desription: hggluhfkdsnlk<br><br>
@@ -797,8 +827,9 @@
                             </div>
                         </div>
                         <div class="mySlides">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
                             <div class="numbertext"></div>
-                            <img src="img/18/DSC_0667.JPG" style="width:50%" align="left" >
+                            <img src="img/18/DSC_0667.JPG" style="width:50%;height:600px" align="left" >
                             <div class="caption-container">
                                 <p id="caption">Painting Title: Nature<br><br>
                                     Painting Desription: hggluhfkdsnlk<br><br>
@@ -809,8 +840,9 @@
                             </div>
                         </div>
                         <div class="mySlides">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
                             <div class="numbertext"></div>
-                            <img src="img/18/DSC_0668.JPG" style="width:50%" align="left" >
+                            <img src="img/18/DSC_0668.JPG" style="width:50%;height:600px" align="left" >
                             <div class="caption-container">
                                 <p id="caption">Painting Title: Nature<br><br>
                                     Painting Desription: hggluhfkdsnlk<br><br>
@@ -821,8 +853,9 @@
                             </div>
                         </div>
                         <div class="mySlides">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
                             <div class="numbertext"></div>
-                            <img src="img/18/DSC_0676.JPG" style="width:50%" align="left" >
+                            <img src="img/18/DSC_0676.JPG" style="width:50%;height:600px" align="left" >
                             <div class="caption-container">
                                 <p id="caption">Painting Title: Nature<br><br>
                                     Painting Desription: hggluhfkdsnlk<br><br>
@@ -833,8 +866,9 @@
                             </div>
                         </div>
                         <div class="mySlides">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
                             <div class="numbertext"></div>
-                            <img src="img/18/DSC_0679.JPG" style="width:50%" align="left" >
+                            <img src="img/18/DSC_0679.JPG" style="width:50%;height:600px" align="left" >
                             <div class="caption-container">
                                 <p id="caption">Painting Title: Nature<br><br>
                                     Painting Desription: hggluhfkdsnlk<br><br>
@@ -845,8 +879,9 @@
                             </div>
                         </div>
                         <div class="mySlides">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
                             <div class="numbertext"></div>
-                            <img src="img/18/DSC_0681.JPG" style="width:50%" align="left" >
+                            <img src="img/18/DSC_0681.JPG" style="width:50%;height:600px" align="left" >
                             <div class="caption-container">
                                 <p id="caption">Painting Title: Nature<br><br>
                                     Painting Desription: hggluhfkdsnlk<br><br>
@@ -857,8 +892,9 @@
                             </div>
                         </div>
                         <div class="mySlides">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
                             <div class="numbertext"></div>
-                            <img src="img/18/DSC_0684.JPG" style="width:50%" align="left" >
+                            <img src="img/18/DSC_0684.JPG" style="width:50%;height:600px" align="left" >
                             <div class="caption-container">
                                 <p id="caption">Painting Title: Nature<br><br>
                                     Painting Desription: hggluhfkdsnlk<br><br>
@@ -869,8 +905,9 @@
                             </div>
                         </div>
                         <div class="mySlides">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
                             <div class="numbertext"></div>
-                            <img src="img/18/DSC_0690.JPG" style="width:50%" align="left" >
+                            <img src="img/18/DSC_0690.JPG" style="width:50%;height:600px" align="left" >
                             <div class="caption-container">
                                 <p id="caption">Painting Title: Nature<br><br>
                                     Painting Desription: hggluhfkdsnlk<br><br>
@@ -881,8 +918,9 @@
                             </div>
                         </div>
                         <div class="mySlides">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
                             <div class="numbertext"></div>
-                            <img src="img/18/DSC_0691.JPG" style="width:50%" align="left" >
+                            <img src="img/18/DSC_0691.JPG" style="width:50;height:600px%" align="left" >
                             <div class="caption-container">
                                 <p id="caption">Painting Title: Nature<br><br>
                                     Painting Desription: hggluhfkdsnlk<br><br>
@@ -893,8 +931,9 @@
                             </div>
                         </div>
                         <div class="mySlides">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
                             <div class="numbertext"></div>
-                            <img src="img/18/DSC_0692.JPG" style="width:50%" align="left" >
+                            <img src="img/18/DSC_0692.JPG" style="width:50%;height:600px" align="left" >
                             <div class="caption-container">
                                 <p id="caption">Painting Title: Nature<br><br>
                                     Painting Desription: hggluhfkdsnlk<br><br>
@@ -905,8 +944,9 @@
                             </div>
                         </div>
                         <div class="mySlides">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
                             <div class="numbertext"></div>
-                            <img src="img/18/DSC_0693.JPG" style="width:50%" align="left" >
+                            <img src="img/18/DSC_0693.JPG" style="width:50%;height:600px" align="left" >
                             <div class="caption-container">
                                 <p id="caption">Painting Title: Nature<br><br>
                                     Painting Desription: hggluhfkdsnlk<br><br>
@@ -917,8 +957,9 @@
                             </div>
                         </div>
                         <div class="mySlides">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
                             <div class="numbertext"></div>
-                            <img src="img/18/DSC_0694.JPG" style="width:50%" align="left" >
+                            <img src="img/18/DSC_0694.JPG" style="width:50%;height:600px" align="left" >
                             <div class="caption-container">
                                 <p id="caption">Painting Title: Nature<br><br>
                                     Painting Desription: hggluhfkdsnlk<br><br>
@@ -929,8 +970,9 @@
                             </div>
                         </div>
                         <div class="mySlides">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
                             <div class="numbertext"></div>
-                            <img src="img/18/DSC_0702.JPG" style="width:50%" align="left" >
+                            <img src="img/18/DSC_0702.JPG" style="width:50%;height:600px" align="left" >
                             <div class="caption-container">
                                 <p id="caption">Painting Title: Nature<br><br>
                                     Painting Desription: hggluhfkdsnlk<br><br>
@@ -941,8 +983,9 @@
                             </div>
                         </div>
                         <div class="mySlides">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
                             <div class="numbertext"></div>
-                            <img src="img/18/DSC_0703.JPG" style="width:50%" align="left" >
+                            <img src="img/18/DSC_0703.JPG" style="width:50%;height:600px" align="left" >
                             <div class="caption-container">
                                 <p id="caption">Painting Title: Nature<br><br>
                                     Painting Desription: hggluhfkdsnlk<br><br>
@@ -953,8 +996,9 @@
                             </div>
                         </div>
                         <div class="mySlides">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
                             <div class="numbertext"></div>
-                            <img src="img/18/DSC_0704.JPG" style="width:50%" align="left" >
+                            <img src="img/18/DSC_0704.JPG" style="width:50%;height:600px" align="left" >
                             <div class="caption-container">
                                 <p id="caption">Painting Title: Nature<br><br>
                                     Painting Desription: hggluhfkdsnlk<br><br>
@@ -965,8 +1009,9 @@
                             </div>
                         </div>
                         <div class="mySlides">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
                             <div class="numbertext"></div>
-                            <img src="img/18/DSC_0705.JPG" style="width:50%" align="left" >
+                            <img src="img/18/DSC_0705.JPG" style="width:50%;height:600px" align="left" >
                             <div class="caption-container">
                                 <p id="caption">Painting Title: Nature<br><br>
                                     Painting Desription: hggluhfkdsnlk<br><br>
@@ -977,8 +1022,9 @@
                             </div>
                         </div>
                         <div class="mySlides">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
                             <div class="numbertext"></div>
-                            <img src="img/18/DSC_0706.JPG" style="width:50%" align="left" >
+                            <img src="img/18/DSC_0706.JPG" style="width:50%;height:600px" align="left" >
                             <div class="caption-container">
                                 <p id="caption">Painting Title: Nature<br><br>
                                     Painting Desription: hggluhfkdsnlk<br><br>
@@ -989,8 +1035,9 @@
                             </div>
                         </div>
                         <div class="mySlides">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
                             <div class="numbertext"></div>
-                            <img src="img/18/DSC_0707.JPG" style="width:50%" align="left" >
+                            <img src="img/18/DSC_0707.JPG" style="width:50%;height:600px" align="left" >
                             <div class="caption-container">
                                 <p id="caption">Painting Title: Nature<br><br>
                                     Painting Desription: hggluhfkdsnlk<br><br>
@@ -1001,8 +1048,9 @@
                             </div>
                         </div>
                         <div class="mySlides">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
                             <div class="numbertext"></div>
-                            <img src="img/18/DSC_0708.JPG" style="width:50%" align="left" >
+                            <img src="img/18/DSC_0708.JPG" style="width:50%;height:600px" align="left" >
                             <div class="caption-container">
                                 <p id="caption">Painting Title: Nature<br><br>
                                     Painting Desription: hggluhfkdsnlk<br><br>
@@ -1013,8 +1061,9 @@
                             </div>
                         </div>
                         <div class="mySlides">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
                             <div class="numbertext"></div>
-                            <img src="img/18/DSC_0709.JPG" style="width:50%" align="left" >
+                            <img src="img/18/DSC_0709.JPG" style="width:50%;height:600px" align="left" >
                             <div class="caption-container">
                                 <p id="caption">Painting Title: Nature<br><br>
                                     Painting Desription: hggluhfkdsnlk<br><br>

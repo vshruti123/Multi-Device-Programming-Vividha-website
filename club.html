@@ -18,33 +18,54 @@
 
         <link href="css/style.css" rel="stylesheet">
         <link href="color/default.css" rel="stylesheet">
-        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+       <!-- <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
         <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>-->
         <script src="js/jq.js"></script>
         <style>
-            body{
-                background-image: url('img/back/1.jpg');
-            }
+            
             img{
                 margin-bottom: -4px;
                 margin-top: 50px;
             }
+            .imgAbt{
+                align-self: center;
+                align-content: center;
+                align-items: center;
+            }
             .thumbnail{
                 border-color: #269abc;
+            }
+            .thumbnail img{
+                height: 250px;
+                width: 300px;
             }
             .thumbnail:hover{
                 box-shadow: 5px 5px 5px 5px gainsboro;
             }
+
+            .captionMam{
+                padding-top: 30px;
+                text-align: center;
+            }
+            .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+            
         </style>
     </head>
-    <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
-        <!-- Preloader -->
 
+    <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+
+        <!-- Preloader -->
         <div id="preloader">
             <div id="load"></div>
         </div>
-        <!--Navigation Bar-->
+
+        <!-- Navigation Bar -->
         <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
             <div class="container">
                 <div class="navbar-header page-scroll">
@@ -57,18 +78,16 @@
                         </a>
                     </center>
                 </div>
-                <br>
-                <br>
-                <br>
 
-
+                <br>
+                <br>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse navbar-default navbar-main-collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About US</a></li>
-                        <li  class="active"><a href="club.html">Club Members</a></li>
+                        <li class="active"><a href="club.html">Club Members</a></li>
 
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Exhibitions <b class="caret"></b></a>
@@ -78,18 +97,22 @@
                                 <li><a href="18.html">2018</a></li>
                             </ul>
                         </li>
-                        <li><a href="contact.html">Contact Us</a></li>
-
-
+                        <li>
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+                        </li>
+                        <li>
+                            <a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+                        </li>
                     </ul>
                 </div>
-
             </div>
-            <!-- /.container -->
         </nav>
-        <section id="intro">
 
-        </section>
+        <section id="intro"></section>
+
         <br>
         <br>
         <br>
@@ -103,188 +126,195 @@
         <br>
 
         <!--Vaishali Ma'am's image-->
+       
+        <center>
+            <h2>FACULTY CO-ORDINATOR</h2>
+        </center>
+       
         <div class="container">
-
             <div class="row">
-                <div class="col-xs-6 col-sm-3 col-md-4">
+                
                     <div class="wow bounceInUp" data-wow-delay="0.2s">
-                        <div class="team boxed-grey">
+                       
                             <div class="imgAbt">
-                                <img  class="img-responsive img-circle" src="img/team/1.jpg" />
+                                <img class="img-responsive img-circle" style="max-height: 30%;max-width: 30%"src="img/team/1.jpg" />
+                                
                             </div>
                         </div>
-                    </div>
-                </div>
-                <!--Text-Vaishali Ma'am-->
-                <div class="col-md-8">
-                    <p>Lots of text here...With the four tiers of grids available you're bound to run into issues where, at certain breakpoints, your columns don't clear quite right as one is taller than the other. To fix that, use a combination of a .clearfix and o</p>
-                </div>
+                
+            </div> 
             </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <!--Coordinator Section-->
-    <center>
-        <h1>CO-ORDINATORS</h1>
-    </center>
-    <br>
-    <br>
-
-    <div class="container">
-        <div class="row text-center" id="item_list">
-            <div class="col-sm-6">
-
-                <div class="thumbnail">
-                    <img src="img/shubhankar.jpg" alt="Shubhankar Dhruv">
-                    <div class="caption">
-                        <h3>Shubhankar Dhruv</h3>
-                        <p>2017-2021</p>
-                    </div>
-                </div> 
-
-            </div>
-
-            <div class="col-sm-6">
-
-                <div class="thumbnail">
-                    <img src="img/4.jpg" alt="">
-                    <div class="caption">
-                        <h3>Vista Vincent</h3>
-                        <p>2017-2021</p>
-                    </div>
-                </div> 
-
-            </div>
-
-
-        </div>
-    </div>
-    <br>
-    <br>
-    <!--Club Members section-->
-    <center>
-        <h1> CLUB MEMBERS </h1>
-    </center>
-    <br>
-    <br>
-    <div class="container">
-        <div class="row text-center" id="item_list">
-            <div class="col-sm-3">
-
-                <div class="thumbnail">
-                    <img src="img/mousumi.jpg" alt="Mousumi Saha">
-                    <div class="caption">
-                        <h5>Mousumi Saha</h5>
-
-                    </div>
-                </div> 
-
-            </div>
-
-
-
-            <div class="col-sm-3">
-
-                <div class="thumbnail">
-                    <img src="img/deergha.jpg" alt="Deergha Borker">
-                    <div class="caption">
-                        <h5>Deergha Borker</h5>
-
-                    </div>
-                </div> 
-
-            </div>
-            <div class="col-sm-3">
-
-                <div class="thumbnail">
-                    <img src="img/shreya.JPG" alt="Shreya Nigam">
-                    <div class="caption">
-                        <h5>Shreya Nigam</h5>
-
-                    </div>
-                </div> 
-
-            </div>
-            <div class="col-sm-3">
-
-                <div class="thumbnail">
-                    <img src="img/shivam.jpeg" alt="Shivam Paul">
-                    <div class="caption">
-                        <h5>Shivam Paul</h5>
-
-                    </div>
-                </div> 
-
-            </div>
-            <div class="col-sm-3">
-
-                <div class="thumbnail">
-                    <img src="img/SAHASRABDI_BHATTACHERYA_1.jpg" alt="Sahasrabdi Bhattacherya">
-                    <div class="caption">
-                        <h5>Sahasrabdi Bhattacherya</h5>
-
-                    </div>
-                </div> 
-
-            </div>
-            <div class="col-sm-3">
-
-                <div class="thumbnail">
-                    <img src="img/yash_jain.jpg" alt="Yash Jain">
-                    <div class="caption">
-                        <h5>Yash Jain</h5>
-
-                    </div>
-                </div> 
-
-            </div>
-
-
-
-
-            <div class="col-sm-3">
-
-                <div class="thumbnail">
-                    <img src="img/sourish.jpeg" alt="Sourish Das">
-                    <div class="caption">
-                        <h5>Sourish Das</h5>
-
-                    </div>
-                </div> 
-
-            </div>
-
-
-        </div>
-    </div>
-    <!--footer-->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-lg-12">
-                    <div class="wow shake" data-wow-delay="0.4s">
-                        <div class="page-scroll marginbot-30">
-                            <a href="#intro" id="totop" class="btn btn-circle">
-                                <i class="fa fa-angle-double-up animated"></i>
-                            </a>
+        <div class="captionMam">
+                            <h4>  Mrs. Vaishali Shinde</h4>
                         </div>
-                    </div>
-                    <p>&copy;Copyright VIVIDHA. All rights reserved.</p>
-                </div>
-            </div>	
-        </div>
-    </footer>
-    <!--Core JavaScript Files-->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>	
-    <script src="js/jquery.scrollTo.js"></script>
-    <script src="js/wow.min.js"></script>
-    <!-- Custom Theme JavaScript -->
-    <script src="js/custom.js"></script>
-</body>
+        <!--Coordinator Section-->
+        <center>
+            <h1>CO-ORDINATORS</h1>
+        </center>
+        <br>
+        <br>
+
+        <div class="container">
+            <div class="row text-center" id="item_list">
+                <div class="col-sm-6">
+                    <div class="thumbnail">
+                        <img src="img/shubhankar.jpg" alt="Shubhankar Dhruv">
+                        <div class="caption">
+                            <h3>Shubhankar Dhruv</h3>
+                            <p>2017-2021</p>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="thumbnail">
+                        <img src="img/4.jpg" alt="">
+                        <div class="caption">
+                            <h3>Vista Vincent</h3>
+                            <p>2017-2021</p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <!--Club Members section-->
+        <center>
+            <h1> CLUB MEMBERS </h1>
+        </center>
+
+        <br>
+        <br>
+
+        <div class="container">
+            <div class="row text-center" id="item_list">
+                <div class="col-sm-3">
+                    <div class="thumbnail">
+                        <img src="img/mousumi.jpg" alt="Mousumi Saha">
+                        <div class="caption">
+                            <h5>Mousumi Saha</h5>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="thumbnail">
+                        <img src="img/deergha.jpg" alt="Deergha Borker">
+                        <div class="caption">
+                            <h5>Deergha Borker</h5>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="thumbnail">
+                        <img src="img/shreya.JPG" alt="Shreya Nigam">
+                        <div class="caption">
+                            <h5>Shreya Nigam</h5>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="thumbnail">
+                        <img src="img/shivam.jpeg" alt="Shivam Paul">
+                        <div class="caption">
+                            <h5>Shivam Paul</h5>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="thumbnail">
+                        <img src="img/SAHASRABDI_BHATTACHERYA_1.jpg" alt="Sahasrabdi Bhattacherya">
+                        <div class="caption">
+                            <h5>Sahasrabdi Bhattacherya</h5>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="thumbnail">
+                        <img src="img/yash_jain.jpg" alt="Yash Jain">
+                        <div class="caption">
+                            <h5>Yash Jain</h5>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-sm-3">
+                    <div class="thumbnail">
+                        <img src="img/yash_jain.jpg" alt="Yash Jain">
+                        <div class="caption">
+                            <h5>Yash Jain</h5>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-sm-3">
+                    <div class="thumbnail">
+                        <img src="img/yash_jain.jpg" alt="Yash Jain">
+                        <div class="caption">
+                            <h5>Yash Jain</h5>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="thumbnail">
+                        <img src="img/yash_jain.jpg" alt="Yash Jain">
+                        <div class="caption">
+                            <h5>Yash Jain</h5>
+                        </div>
+                    </div> 
+                </div>
+               
+
+                <div class="col-sm-3">
+                    <div class="thumbnail">
+                        <img src="img/sourish.jpeg" alt="Sourish Das">
+                        <div class="caption">
+                            <h5>Sourish Das</h5>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <!--footer-->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <div class="wow shake" data-wow-delay="0.4s">
+                            <div class="page-scroll marginbot-30">
+                                <a href="#intro" id="totop" class="btn btn-circle">
+                                    <i class="fa fa-angle-double-up animated"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p>&copy;Copyright VIVIDHA. All rights reserved.</p>
+                    </div>
+                </div>	
+            </div>
+        </footer>
+
+        <!--Core JavaScript Files-->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>	
+        <script src="js/jquery.scrollTo.js"></script>
+        <script src="js/wow.min.js"></script>
+        
+        <!-- Custom Theme JavaScript -->
+        <script src="js/custom.js"></script>
+    </body>
 </html>
