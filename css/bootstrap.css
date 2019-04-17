@@ -3536,7 +3536,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav-tabs.nav-justified > .dropdown .dropdown-menu {
   top: auto;
-  left: auto;
 }
 @media (min-width: 768px) {
   .nav-tabs.nav-justified > li {
