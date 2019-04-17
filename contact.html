@@ -23,6 +23,14 @@ and open the template in the editor.
 
         <link href="css/style.css" rel="stylesheet">
         <link href="color/default.css" rel="stylesheet">
+        <style>
+
+        .widget-contact{
+            background-color: white;
+            font-size:15px;
+        }
+
+    </style>
 
     </head>
 
@@ -34,13 +42,13 @@ and open the template in the editor.
         </div>
 
         <!--Navigation Bar-->
-        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+       <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
             <div class="container">
                 <div class="navbar-header page-scroll">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <center>
+                    <center> 
                         <a class="navbar-brand" href="index.html">
                             <h1>VIVIDHA</h1> 
                         </a>
@@ -68,6 +76,12 @@ and open the template in the editor.
                         <li class="active">
                             <a href="contact.html">Contact Us</a>
                         </li>
+                        <li>
+                            <a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+                        </li>
+                        <li>
+                            <a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -94,14 +108,14 @@ and open the template in the editor.
                 <div class="row">
                     <div class="col-lg-8">
                         <div class="boxed-grey">
-                            <form id="contact-form">
+                            <!-- <form id="contact-form" method="POST", action="contact_form.php">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="name">
                                                 Name
                                             </label>
-                                            <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                                            <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" required="required" />
                                         </div>
                                         <div class="form-group">
                                             <label for="email">
@@ -111,49 +125,36 @@ and open the template in the editor.
                                                 <span class="input-group-addon">
                                                     <span class="glyphicon glyphicon-envelope"></span>
                                                 </span>
-                                                <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" />
+                                                <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" required="required" />
                                             </div>
                                         </div>
-                                        <div class="form-group">
-                                            <label for="subject">
-                                                Subject
-                                            </label>
-                                            <select id="subject" name="subject" class="form-control" required="required">
-                                                <option value="na" selected="">Choose One:</option>
-                                                <option value="service">General Customer Service</option>
-                                                <option value="suggestions">Suggestions</option>
-                                                <option value="product">Product Support</option>
-                                            </select>
-                                        </div>
+                                       
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="name">
                                                 Message
                                             </label>
-                                            <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required" placeholder="Message">
+                                            <textarea name="message" name="message" id="message" class="form-control" rows="9" cols="25" required="required" placeholder="Message">
                                             </textarea>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
-                                        <button type="submit" class="btn btn-skin pull-right" id="btnContactUs">
-                                            Send Message
-                                        </button>
-                                    </div>
+                                        <input type="submit" value="Contact Us" class="btn btn-skin pull-right" id="btnContactUs">                                    </div>
                                 </div>
-                            </form>
+                            </form> -->
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSey1MGpNGnmYsxG4yAEfH-z2Bn8QePRWiHtLYYPRJRVfRWtFw/viewform?embedded=true" width="640" height="753" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
                         </div>
                     </div>
 
                     <!-- Address of NIIT University -->
                     <div class="col-lg-4">
                         <div class="widget-contact">
-                            <h5>Main Office</h5>
+                            <h4>Address</h4>
                             <address>
-                                <strong>Squas Design, Inc.</strong><br>
-                                Tower 795 Folsom Ave, Beautiful Suite 600<br>
-                                San Francisco, CA 94107<br>
-                                <abbr title="Phone">P:</abbr> (123) 456-7890
+                                <strong>NIIT University</strong><br>
+                                NH-8,Delhi-Jaipur Highway,District Alwar,Neemrana,Rajasthan 301705<br>
+                                <abbr title="Phone">P:</abbr> 
                             </address>
 
                             <!--Email of the Vividha Club-->
@@ -166,10 +167,8 @@ and open the template in the editor.
 
                                 <!--Social Media Links-->
                                 <ul class="company-social">
-                                    <li class="social-facebook"><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                    <li class="social-twitter"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                    <li class="social-dribble"><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li>
-                                    <li class="social-google"><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                                    <li class="social-facebook"><a href="https://www.facebook.com/niituniversity.in/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    
                                 </ul>	
                             </address>
                         </div>	
@@ -177,6 +176,11 @@ and open the template in the editor.
                 </div>	
             </div>
         </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
         <!--footer-->
         <footer>
@@ -184,11 +188,7 @@ and open the template in the editor.
                 <div class="row">
                     <div class="col-md-12 col-lg-12">
                         <div class="wow shake" data-wow-delay="0.4s">
-                            <div class="page-scroll marginbot-30">
-                                <a href="#intro" id="totop" class="btn btn-circle">
-                                    <i class="fa fa-angle-double-up animated"></i>
-                                </a>
-                            </div>
+                           
                         </div>
                         <p>&copy;Copyright VIVIDHA. All rights reserved.</p>
                     </div>
